@@ -1,8 +1,8 @@
+DOCKER_COMPOSE_FILE	= ./docker-compose.yml
+
 DOCKER_COMPOSE		= docker compose
 DOCKER_IMAGE		= docker image
 DOCKER_VOLUME		= docker volume
-
-DOCKER_COMPOSE_FILE	= ./docker-compose.yml
 
 UP_FLAGS		= -d --build
 
