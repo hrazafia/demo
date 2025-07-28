@@ -1,10 +1,10 @@
 DOCKER_COMPOSE		= docker compose
-
 DOCKER_COMPOSE_FILE	= ./docker-compose.yml
-BULDFLAG		= -d --build
+
+UP_FLAG			= -d --build
 
 up:
-	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) up $(BUILDFLAG)
+	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) up $(UP_FLAGS)
 
 down:
 	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) down
