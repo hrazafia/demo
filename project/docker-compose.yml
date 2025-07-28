@@ -15,5 +15,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/hrazafia/www/html
+      device: ./www/html
       o: bind
