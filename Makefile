@@ -22,7 +22,7 @@ status:
 	${DOCKER_COMPOSE} -f ${DOCKER_COMPOSE_FILE} ps
 
 clean: down
-	${DOCKER_IMAGE} rm $${${DOCKER_IMAGE} list -aq}
-	${DOCKER_VOLUME} rm $${${DOCKER_VOLUME} list -q}
+	${DOCKER_IMAGE} rm $$(${DOCKER_IMAGE} list -aq)
+	${DOCKER_VOLUME} rm $$(${DOCKER_VOLUME} list -q)
 
 .PHONY: up down start stop status clean
