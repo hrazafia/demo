@@ -1,0 +1,19 @@
+services:
+  nginx:
+    build:
+      context: ./nginx
+    image: nginx:test
+    container_name: test
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - website:/var/www/html
+
+volumes:
+  website:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./www/html
+      o: bind
